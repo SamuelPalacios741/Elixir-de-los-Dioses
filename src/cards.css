@@ -1,0 +1,66 @@
+body {
+  background: rgb(103, 13, 13);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Cardimg {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px; /* Espacio entre las tarjetas */
+  padding: 20px; /* Espacio alrededor de toda la sección */
+}
+
+.VinoCard-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra todo dentro del contenedor */
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ff0000;
+  border-radius: 50px;
+  width: 200px;
+  margin: 10px;
+  background-color: #ffffff;
+  margin: 20px;
+}
+
+.VinoCard-Img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 50px;
+}
+
+.VinoCard-Button {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.VinoCard-Button:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+
+  transition: 0.5s;
+}
+
+.VinoCard-Container:hover {
+  transform: scale(105%);
+  transition: 2s;
+}
+
+.Footer-Cards {
+  background-color: beige;
+  color: #000000;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 25px;
+  justify-content: space-between;
+  margin: 0;
+  border-radius: 32px;
+}
