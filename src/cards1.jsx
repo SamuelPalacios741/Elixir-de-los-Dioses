@@ -47,6 +47,13 @@ const VinoName = [
       "https://www.thecocktaildb.com/images/media/drink/6ck9yi1589574317.jpg",
     lo_compraste: true,
   },
+  {
+    id: 7,
+    nombre_vino: "Daiquiri",
+    imagen:
+      "https://www.thecocktaildb.com/images/media/drink/mrz9091589574515.jpg",
+    lo_compraste: true,
+  },
 ];
 
 export function Vino() {
