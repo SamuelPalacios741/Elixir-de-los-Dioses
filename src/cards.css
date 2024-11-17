@@ -1,0 +1,180 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 9%;
+  flex-wrap: wrap;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 12%;
+  flex-wrap: wrap;
+}
+.card {
+  position: relative;
+  margin: 20px;
+  background: bisque;
+  border-radius: 3ch;
+  width: 250px;
+  height: auto;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img img {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: 3ch 3ch 0 0;
+  transition: 0.3s;
+}
+
+.filtro {
+  transform: translateY(25px);
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  background: rgba(0, 0, 0, 0.39);
+  backdrop-filter: blur(1rem);
+  border-radius: 3ch 3ch 0 0;
+  transition: all 0.3s;
+}
+
+.card-img:hover .filtro {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.filtro-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 35% auto;
+}
+
+.filtro-content p {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 10px;
+  cursor: default;
+}
+
+.filtro-content button {
+  margin-top: 10px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 3ch;
+  padding: 10px;
+  color: white;
+  transition: 0.3s;
+}
+
+.filtro-content button:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+.card-content {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+  cursor: default;
+}
+
+.boton-Añadido {
+  margin: 10px;
+  background: #4caf50;
+  background: transparent;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10rem;
+  cursor: pointer;
+  border: 2px solid #4caf50;
+  transition: 0.3s;
+}
+
+.boton-Añadir {
+  margin: 10px;
+  background: #4caf50;
+  border: 2px solid #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-content button:hover {
+  background: rgb(51, 3, 3);
+  color: white;
+}
+
+.card-content button:active {
+  transition: 0.3s;
+  background: black;
+}
+
+.Footer-Cards {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: beige;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+  cursor: default;
+}
+
+.boton-Añadido {
+  margin: 10px;
+  background: #4caf50;
+  background: transparent;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10rem;
+  cursor: pointer;
+  border: 2px solid #4caf50;
+  transition: 0.3s;
+}
+
+.boton-Añadir {
+  margin: 10px;
+  background: #4caf50;
+  border: 2px solid #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-content button:hover {
+  background: rgb(51, 3, 3);
+  color: white;
+}
+
+.card-content button:active {
+  transition: 0.3s;
+  background: black;
+}

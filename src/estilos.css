@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: rgb(51, 3, 3);
+}
+
+.header header {
+  background: url("./img/wine_red_wine_Argentina_Italy_cork_wall-1820341.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 50vh;
+  border-bottom: 10px solid brown;
+}
+
+.header .titulo {
+  text-align: center;
+  margin: 20px;
+  color: white;
+  font-size: 25px;
+}
+
+.header nav {
+  background: bisque;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  position: relative;
+  z-index: 100;
+}
+
+.header nav button {
+  background: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.header nav button:hover i {
+  transform: scale(1.5) rotateZ(-10deg);
+}
+
+.header nav ul {
+  list-style-type: none;
+  display: flex;
+  position: relative;
+}
+
+.header nav ul li {
+  margin: 0 10px;
+  position: relative;
+  float: left;
+}
+
+.header nav ul li a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.header nav ul li .rayita::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  border-radius: 3ch;
+  height: 3px;
+  background: rgb(51, 3, 3);
+  transition: all 0.3s;
+}
+
+.header nav ul li .rayita:hover::before {
+  width: 100%;
+}
+
+.header nav ul li a i {
+  transform: rotate(270deg);
+}
+
+.header nav ul li a:hover i {
+  transform: rotate(360deg);
+}
+
+.header nav ul li ul {
+  position: absolute;
+  z-index: 10000;
+  width: 170px;
+  margin-top: 10px;
+  border-radius: 1ch;
+  background: rgb(234, 234, 234);
+  display: none;
+}
+
+.header nav ul li:hover ul {
+  display: block;
+}
+
+.header nav ul li ul li {
+  position: relative;
+  padding: 10px;
+  width: 100%;
+}
+
+.header nav ul li ul li a {
+  width: 100%;
+  text-align: center;
+}
+
+.header header .logo {
+  margin-left: 40%;
+  animation: hola 2s 1;
+  z-index: 1000;
+}
+
+@keyframes hola {
+  0% {
+    transform: translateY(-200px);
+  }
+}
+
+.header header .logo img {
+  z-index: 1000;
+  width: 300px;
+  backdrop-filter: blur(1rem);
+  margin-top: 20%;
+  border-radius: 100ch;
+  background: rgba(165, 42, 42, 0.397);
+  border: 5px solid brown;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.611);
+}
