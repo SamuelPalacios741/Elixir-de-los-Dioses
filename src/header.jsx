@@ -1,7 +1,7 @@
 import React from "react";
 import "./estilos.css";
 
-function VinoHeader() {
+function PrincipioHeader() {
   return (
     <div className="header">
       <header>
@@ -100,4 +100,4 @@ function VinoHeader() {
   );
 }
 
-export default VinoHeader;
+export default PrincipioHeader;
