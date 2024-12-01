@@ -1,5 +1,5 @@
 import React from "react";
-import "./cards.css";
+import "./estilos.css";
 
 export function FooterCards() {
   return (

@@ -7,8 +7,8 @@ body {
   background: rgb(51, 3, 3);
 }
 
-.header header {
-  background: url("./img/wine_red_wine_Argentina_Italy_cork_wall-1820341.jpg");
+header {
+  background: url("../img/wine_red_wine_Argentina_Italy_cork_wall-1820341.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -17,7 +17,7 @@ body {
   border-bottom: 10px solid brown;
 }
 
-.header .titulo {
+.titulo {
   text-align: center;
   margin: 20px;
   color: white;
@@ -118,7 +118,7 @@ body {
   text-align: center;
 }
 
-.header header .logo {
+header .logo {
   margin-left: 40%;
   animation: hola 2s 1;
   z-index: 1000;
@@ -130,7 +130,7 @@ body {
   }
 }
 
-.header header .logo img {
+header .logo img {
   z-index: 1000;
   width: 300px;
   backdrop-filter: blur(1rem);
@@ -139,4 +139,11 @@ body {
   background: rgba(165, 42, 42, 0.397);
   border: 5px solid brown;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.611);
+}
+
+.Footer-Cards {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: beige;
 }

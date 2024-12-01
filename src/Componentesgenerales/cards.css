@@ -9,9 +9,10 @@
   display: flex;
   justify-content: center;
   padding: 20px;
-  margin-top: 12%;
+  margin-top: 3%;
   flex-wrap: wrap;
 }
+
 .card {
   position: relative;
   margin: 20px;
@@ -131,13 +132,6 @@
 .card-content button:active {
   transition: 0.3s;
   background: black;
-}
-
-.Footer-Cards {
-  margin: 0;
-  padding: 20px;
-  text-align: center;
-  background-color: beige;
 }
 
 .card-content h3 {

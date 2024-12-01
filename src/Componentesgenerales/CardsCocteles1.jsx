@@ -1,68 +1,67 @@
 import React from "react";
-import { Principio } from "./cards.jsx";
-import "./cards.css";
+import { CoctelesCards } from "./CardsCocteles";
 
-const VinoName = [
+const Cocteles = [
   {
-    id: 1,
-    nombre_vino: "Mojito",
+    id: 8,
+    nombre_coctel: "Mojito",
     imagen:
       "https://www.thecocktaildb.com/images/media/drink/metwgh1606770327.jpg",
     lo_compraste: true,
   },
 
   {
-    id: 2,
-    nombre_vino: "Old Fashioned",
+    id: 9,
+    nombre_coctel: "Old Fashioned",
     imagen:
       "https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg",
     lo_compraste: false,
   },
 
   {
-    id: 3,
-    nombre_vino: "Long Island Tea",
+    id: 10,
+    nombre_coctel: "Long Island Tea",
     imagen:
       "https://www.thecocktaildb.com/images/media/drink/nkwr4c1606770558.jpg",
     lo_compraste: false,
   },
   {
-    id: 4,
-    nombre_vino: "Negroni",
+    id: 11,
+    nombre_coctel: "Negroni",
     imagen:
       "https://www.thecocktaildb.com/images/media/drink/qgdu971561574065.jpg",
     lo_compraste: true,
   },
   {
-    id: 5,
-    nombre_vino: "Whiskey Sour",
+    id: 12,
+    nombre_coctel: "Whiskey Sour",
     imagen:
       "https://www.thecocktaildb.com/images/media/drink/hbkfsh1589574990.jpg",
     lo_compraste: true,
   },
   {
-    id: 6,
-    nombre_vino: "Dry Martini",
+    id: 13,
+    nombre_coctel: "Dry Martini",
     imagen:
       "https://www.thecocktaildb.com/images/media/drink/6ck9yi1589574317.jpg",
     lo_compraste: true,
   },
   {
-    id: 7,
-    nombre_vino: "Daiquiri",
+    id: 14,
+    nombre_coctel: "Daiquiri",
     imagen:
       "https://www.thecocktaildb.com/images/media/drink/mrz9091589574515.jpg",
     lo_compraste: true,
   },
 ];
 
-export function PrincipioCards() {
+export function Coctel() {
   return (
     <section className="cards">
-      {VinoName.map(({ id, nombre_vino, imagen, lo_compraste }) => (
-        <Principio
+      {Cocteles.map(({ id, nombre_coctel, imagen, lo_compraste }) => (
+        <CoctelesCards
           key={id}
-          nombre_vino={nombre_vino}
+          nombre_coctel={nombre_coctel}
           imagen={imagen}
           lo_compraste={lo_compraste}
         />
