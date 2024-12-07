@@ -1,12 +1,26 @@
 import React, { useState } from "react";
 import "./cards.css";
+import Swal from "sweetalert2";
 
-export function CoctelesCards({ nombre_coctel, imagen, lo_compraste }) {
+export function CoctelesCards({ nombre_coctel, imagen, lo_compraste, precio }) {
   const [comprar, setComprar] = useState(lo_compraste); //este es nuestro estado inicial
-  const buytext = comprar ? "Eliminar del carrito" : "Añadir al carrito";
+  const buytext = comprar ? "Eliminar del Carrito" : "Añadir al carrito";
 
-  const handleClick = () => {
-    setComprar(!comprar); // con esto cambiamos el estado al hacer click
+  const Alerta = () => {
+    if (!comprar) {
+      Swal.fire({
+        icon: "success",
+        title: "Producto añadido al carrito",
+        text: `añadimos el producto, ${nombre_coctel}`,
+      });
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Producto eliminado del carrito",
+        text: `eliminamos el producto, ${nombre_coctel}`,
+      });
+    }
+    setComprar(!comprar); // esto lo que hace es cambiar el estado del boton al hacer click
   };
 
   return (
@@ -23,9 +37,9 @@ export function CoctelesCards({ nombre_coctel, imagen, lo_compraste }) {
         </div>
         <div className="card-content">
           <h3>{nombre_coctel}</h3>
-          <p>$PRECIO$</p>
+          <p>{precio}</p>
           <button
-            onClick={handleClick}
+            onClick={Alerta}
             className={comprar ? "boton-Añadido" : "boton-Añadir"}
           >
             <span>{buytext}</span>
