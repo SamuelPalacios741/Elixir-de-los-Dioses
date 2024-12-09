@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Coctel } from "../Componentesgenerales/CardsCocteles1.jsx";
 import { PrincipioCards } from "../Componentesgenerales/cards1.jsx";
 import { Vino } from "../Componentesgenerales/CardsVinos1.jsx";
+import Carrito from "../Componentesgenerales/Carrito.jsx";
 
 export function Navegar() {
   return (
@@ -33,6 +34,7 @@ export function Navegar() {
         <Route path="/" element={<PrincipioCards />} />
         <Route path="/coctel" element={<Coctel />} />
         <Route path="/vino" element={<Vino />} />
+        <Route path="/Carrito" element={<Carrito />} />
       </Routes>
     </Router>
   );

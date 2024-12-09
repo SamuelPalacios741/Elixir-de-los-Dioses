@@ -4,7 +4,7 @@
 }
 
 body {
-  background: rgb(51, 3, 3);
+  background: rgb(51, 3, 3) !important;
 }
 
 header {
@@ -141,7 +141,7 @@ header .logo img {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.611);
 }
 
-.Footer-Cards {
+.Footer-Cards-Normal {
   margin: 0;
   padding: 20px;
   text-align: center;
