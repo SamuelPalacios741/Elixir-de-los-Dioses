@@ -3,8 +3,7 @@ import { Button, Card, ListGroup } from "react-bootstrap";
 import {
   agregarAlCarrito,
   eliminarDelCarrito,
-} from "../Redux/Reducers/carritoSlice";
-import Swal from "sweetalert2";
+} from "../redux/Reducers/carritoSlice";
 
 const CardCarrito = ({ producto, accion }) => {
   return (

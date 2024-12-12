@@ -16,12 +16,12 @@ const Carrito = () => {
     Swal.fire({
       icon: "question",
       title: "¿Estás seguro de querer eliminar todos los productos?",
-      showCancelButton: true, // Habilita botón "No"
-      confirmButtonText: "Sí", // Texto del botón "Sí"
-      cancelButtonText: "No", // Texto del botón "No"
+      showCancelButton: true,
+      confirmButtonText: "Sí",
+      cancelButtonText: "No",
     }).then((respuesta) => {
       if (respuesta.isConfirmed) {
-        dispatch(limpiarCarrito()); // Limpia el carrito
+        dispatch(limpiarCarrito());
         Swal.fire({
           text: "Carrito vacío",
           icon: "success",

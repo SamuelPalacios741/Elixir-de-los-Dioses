@@ -6,6 +6,7 @@ import { Coctel } from "../Componentesgenerales/CardsCocteles1.jsx";
 import { PrincipioCards } from "../Componentesgenerales/cards1.jsx";
 import { Vino } from "../Componentesgenerales/CardsVinos1.jsx";
 import Carrito from "../Componentesgenerales/Carrito.jsx";
+import { Crud } from "./crud.jsx";
 
 export function Navegar() {
   return (
@@ -29,12 +30,16 @@ export function Navegar() {
         <Link className="rayita" to="/Carrito">
           CARRITO
         </Link>
+        <Link className="rayita" to="/Crud">
+          CRUD
+        </Link>
       </nav>
       <Routes>
         <Route path="/" element={<PrincipioCards />} />
         <Route path="/coctel" element={<Coctel />} />
         <Route path="/vino" element={<Vino />} />
         <Route path="/Carrito" element={<Carrito />} />
+        <Route path="/Crud" element={<Crud />} />
       </Routes>
     </Router>
   );
